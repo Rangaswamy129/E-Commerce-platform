@@ -10,7 +10,10 @@ backend\node_modules
 /coverage
 
 # production
-/build
+frontend/build
+node_modules
+build
+.env
 
 # misc
 .env
