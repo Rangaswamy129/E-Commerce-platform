@@ -6,7 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CartProvider } from "./context/CartContext";
 import { AuthProvider } from "./context/AuthContext";
 
-import { Elements } from "@stripe/react-stripe-js";
+//import { Elements } from "@stripe/react-stripe-js";
 
 import "./App.css";
 

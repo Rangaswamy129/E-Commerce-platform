@@ -1,17 +1,17 @@
 // src/pages/Checkout.jsx
 import React, { useState } from "react";
-import { Box, Typography, TextField, Button, Card, CardMedia } from "@mui/material";
+import { Box, Typography, Card, CardMedia } from "@mui/material";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
 import PaymentForm from "../components/PaymentForm";
 
-import { useAuth } from "../context/AuthContext";
+//import { useAuth } from "../context/AuthContext";
 
 const Checkout = () => {
   const { cart, clearCart } = useCart();
   const navigate = useNavigate();
       // cart items
-  const { user } = useAuth();       // logged-in user
+ // const { user } = useAuth();       // logged-in user
 const [showPaymentForm, setShowPaymentForm] = useState(false);
 
 
@@ -22,16 +22,16 @@ const [showPaymentForm, setShowPaymentForm] = useState(false);
   );
  
 
-  const [shipping, setShipping] = useState({
-    name: "",
-    address: "",
-    city: "",
-    pincode: "",
-  });
+  // const [shipping, setShipping] = useState({
+  //   name: "",
+  //   address: "",
+  //   city: "",
+  //   pincode: "",
+  // });
 
-  const handleChange = (e) => {
-    setShipping({ ...shipping, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setShipping({ ...shipping, [e.target.name]: e.target.value });
+  // };
 
   
 
