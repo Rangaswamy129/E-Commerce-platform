@@ -30,7 +30,7 @@ connectDB();
 
 //  Routes
 app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/stripe", require("./routes/stripeRoutes"));
+
 
 
 
