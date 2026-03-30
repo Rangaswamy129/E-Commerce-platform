@@ -10,7 +10,7 @@ const app = express();
 // ✅ Allowed origins
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://e-commerce-platform-zs3f.vercel.app"
+  "https://e-commerce-platform-blue.vercel.app"
 ];
 
 // ✅ CORS middleware (FIXED)
