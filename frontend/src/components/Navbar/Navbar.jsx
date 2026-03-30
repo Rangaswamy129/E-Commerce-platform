@@ -14,8 +14,11 @@ const Navbar = ({ setFilters }) => {
   
   const navigate = useNavigate();
   const [text, setText] = useState("");
+   
   const { user, logout } = useAuth();
-  const { cart } = useCart();
+  
+  
+   const { cart } = useCart();
 const points = getPoints();
 <span style={{ color: "gold" }}> {points} pts</span>
   const handleChange = (e) => {
@@ -102,7 +105,7 @@ const points = getPoints();
       {user ? (
   <div style={styles.userBox}>
      {user.name}
-    <button onClick={logout} style={styles.logoutBtn}>
+    <button onClick={() => { logout(); navigate("/login"); }} style={styles.logoutBtn}>
       Logout
     </button>
   </div>
@@ -132,6 +135,8 @@ const styles = {
   userBox: {
     display: "flex",
     alignItems: "center",
+    margin:"10px",
+    padding:"10px",
     gap: "10px",
     color: "#fff",
   },

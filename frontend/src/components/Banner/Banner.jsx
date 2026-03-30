@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 
+
 // Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -12,6 +13,10 @@ import "swiper/css/navigation";
 
 const Banner = () => {
   return (
+    <>
+    
+    
+
     <Box sx={{ width: "100%", borderRadius: "10px", overflow: "hidden", mb: 2 }}>
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
@@ -33,6 +38,7 @@ const Banner = () => {
         </SwiperSlide>
       </Swiper>
     </Box>
+    </>
   );
 };
 

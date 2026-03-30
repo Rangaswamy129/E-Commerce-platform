@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import ProductCard from "../Product/Product";
+// import Navbar from "../Navbar/Navbar";
 
 const ProductList = ({ products = [], filters = {} }) => {
   const [filtered, setFiltered] = useState(products);
@@ -42,6 +43,9 @@ const ProductList = ({ products = [], filters = {} }) => {
   }, [filters, products]);
 
   return (
+    <>
+    
+    {/* <Navbar/> */}
     <Box sx={{ background: "#f4f6f8", minHeight: "100vh", p: 2 }}>
       <Typography variant="h5" fontWeight="bold">
         Explore Products 
@@ -69,6 +73,7 @@ const ProductList = ({ products = [], filters = {} }) => {
         </Typography>
       )}
     </Box>
+    </>
   );
 };
 
