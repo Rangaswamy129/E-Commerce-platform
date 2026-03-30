@@ -55,7 +55,7 @@ const App = () => {
           element={
             <ProtectedRoute>
               <>
-              <Navbar/> 
+              <Navbar setFilters={setFilters}/> 
                 <Banner />
                  <BodyNav />
                 <Categories setFilters={setFilters} />
